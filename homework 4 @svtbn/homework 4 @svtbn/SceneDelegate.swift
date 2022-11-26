@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  homework 3 @svtbn
+//  homework 4 @svtbn
 //
-//  Created by Sviatoslav Binovskyi on 18.11.2022.
+//  Created by Sviatoslav Binovskyi on 22.11.2022.
 //
 
 import UIKit
