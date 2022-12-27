@@ -1,0 +1,56 @@
+
+{
+    "type": "list",
+    "company": {
+        "count": 2,
+        "companyDescription": "Apple is good company which produces cheap devices and sells their almost free",
+        "listOfData": [
+            {
+                "name": "iPhone",
+                "modelNumber": "13",
+                "countries": [
+                    
+                    "USA",
+                    "Ukraine"
+                ],
+                "price":  {
+                    "regions": [
+                        {
+                            "name": "Americans region",
+                            "price": 700
+                        },
+                        
+                        {
+                            "name": "Ukrainian region",
+                            "price": 900
+                        }
+                    ]
+                },
+                "year": 2021
+            },
+            {
+                "name": "iPad",
+                "modelNumber": "14",
+                "countries": [
+                    
+                    "USA",
+                    "Ukraine"
+                ],
+                "price":  {
+                    "regions":  [
+                        {
+                            "name": "American region",
+                            "price": 750
+                        },
+                        
+                        {
+                            "name": "Ukrainian region",
+                            "price": 950
+                        }
+                    ]
+                },
+                "year": 2022
+            }
+        ]
+    }
+}
