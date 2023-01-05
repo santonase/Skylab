@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ONm-Fn-tdf">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2BD-MY-Tqf">
+            <objects>
+                <tabBarController id="ONm-Fn-tdf" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sQ4-UD-gHN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="pAy-xT-qge"/>
+                        <segue destination="poa-fB-EJ2" kind="relationship" relationship="viewControllers" id="UQ2-Ja-73Y"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MgZ-W1-F4X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1045" y="388"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="D5x-Ni-oBU">
+            <objects>
+                <viewController id="poa-fB-EJ2" customClass="FavoritesViewController" customModule="hw8_4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iEc-qr-y1n">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8fj-Ph-zWT">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="poa-fB-EJ2" id="nc7-42-Ydm"/>
+                                    <outlet property="delegate" destination="poa-fB-EJ2" id="ERb-bf-p55"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="g2C-gB-zf0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8fj-Ph-zWT" firstAttribute="top" secondItem="iEc-qr-y1n" secondAttribute="top" id="1N7-Ns-1gw"/>
+                            <constraint firstItem="8fj-Ph-zWT" firstAttribute="leading" secondItem="g2C-gB-zf0" secondAttribute="leading" id="HNm-NZ-ASN"/>
+                            <constraint firstItem="8fj-Ph-zWT" firstAttribute="trailing" secondItem="g2C-gB-zf0" secondAttribute="trailing" id="eP8-eM-ujm"/>
+                            <constraint firstAttribute="bottom" secondItem="8fj-Ph-zWT" secondAttribute="bottom" id="z3f-HU-cXi"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorites" id="inI-cg-V6V"/>
+                    <connections>
+                        <outlet property="FavoritesUITableView" destination="8fj-Ph-zWT" id="Hl4-Vr-xbq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X9E-YB-ulK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="683.80281690140851"/>
+        </scene>
+        <!--Movies-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hw8_4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="41D-0l-Ur8">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="vJM-Dk-Poj"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="eN5-0F-Cqi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="41D-0l-Ur8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2ON-G6-Kpq"/>
+                            <constraint firstItem="41D-0l-Ur8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ESh-h6-yYt"/>
+                            <constraint firstItem="41D-0l-Ur8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KF1-hK-ubi"/>
+                            <constraint firstAttribute="bottom" secondItem="41D-0l-Ur8" secondAttribute="bottom" id="ulk-R1-MXy"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Movies" id="awb-qd-vqA"/>
+                    <connections>
+                        <outlet property="tableView" destination="41D-0l-Ur8" id="EyI-Gq-jbL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
