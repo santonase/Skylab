@@ -12,3 +12,8 @@ class MovieRealm: Object {
     
     @Persisted(primaryKey: true) var title: String
 }
+
+class AllMoviesRealm: Object {
+    @Persisted(primaryKey: true) var title: String
+
+}
