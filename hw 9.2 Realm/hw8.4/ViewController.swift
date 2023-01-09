@@ -14,8 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var dataArray: [Movie] = []
-    
     var cacheArray: [AllMoviesRealm] = []
+    
+    
             
     private let realm = try? Realm()
         

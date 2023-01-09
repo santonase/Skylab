@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DB5FD9D4999E5089D7BCE367 /* Pods_hw8_4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C061B3FDAA621248866BE9A4 /* Pods_hw8_4.framework */; };
 		F304C954295717C20008F2BD /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F304C952295717C20008F2BD /* Movie.swift */; };
+		F3468CAA296C07330001B5ED /* AllMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3468CA9296C07330001B5ED /* AllMoviesViewController.swift */; };
 		F3B1B10F2966E20700484A13 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B1B10E2966E20700484A13 /* FavoritesViewController.swift */; };
 		F3BAFD3829570BA9002403FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BAFD3729570BA9002403FF /* AppDelegate.swift */; };
 		F3BAFD3A29570BA9002403FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BAFD3929570BA9002403FF /* SceneDelegate.swift */; };
@@ -24,6 +25,7 @@
 		A09FA26556B5F4505E43E718 /* Pods-hw8.4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hw8.4.release.xcconfig"; path = "Target Support Files/Pods-hw8.4/Pods-hw8.4.release.xcconfig"; sourceTree = "<group>"; };
 		C061B3FDAA621248866BE9A4 /* Pods_hw8_4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hw8_4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F304C952295717C20008F2BD /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		F3468CA9296C07330001B5ED /* AllMoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMoviesViewController.swift; sourceTree = "<group>"; };
 		F3B1B10E2966E20700484A13 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		F3BAFD3429570BA9002403FF /* hw8.4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hw8.4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3BAFD3729570BA9002403FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				F3BAFD4029570BA9002403FF /* Assets.xcassets */,
 				F3BAFD4229570BA9002403FF /* LaunchScreen.storyboard */,
 				F3BAFD4529570BA9002403FF /* Info.plist */,
+				F3468CA9296C07330001B5ED /* AllMoviesViewController.swift */,
 			);
 			path = hw8.4;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			files = (
 				F3D8CA002966061500D7C033 /* RealmModel.swift in Sources */,
 				F3BAFD3C29570BA9002403FF /* ViewController.swift in Sources */,
+				F3468CAA296C07330001B5ED /* AllMoviesViewController.swift in Sources */,
 				F3BAFD3829570BA9002403FF /* AppDelegate.swift in Sources */,
 				F3BAFD3A29570BA9002403FF /* SceneDelegate.swift in Sources */,
 				F3B1B10F2966E20700484A13 /* FavoritesViewController.swift in Sources */,

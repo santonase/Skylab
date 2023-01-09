@@ -20,11 +20,12 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="pAy-xT-qge"/>
                         <segue destination="poa-fB-EJ2" kind="relationship" relationship="viewControllers" id="UQ2-Ja-73Y"/>
+                        <segue destination="2fF-j1-xgx" kind="relationship" relationship="viewControllers" id="1zZ-HX-bbD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MgZ-W1-F4X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1045" y="388"/>
+            <point key="canvasLocation" x="-1021" y="99"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="D5x-Ni-oBU">
@@ -59,9 +60,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X9E-YB-ulK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139.69465648854961" y="683.80281690140851"/>
+            <point key="canvasLocation" x="-1022" y="846"/>
         </scene>
-        <!--Movies-->
+        <!--All movies-->
+        <scene sceneID="s2b-nX-Unn">
+            <objects>
+                <viewController id="2fF-j1-xgx" customClass="AllMoviesViewController" customModule="hw8_4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UDQ-wf-tEp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wGP-Zl-ZOi">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="2fF-j1-xgx" id="brh-jg-ry6"/>
+                                    <outlet property="delegate" destination="2fF-j1-xgx" id="wjL-DN-YpE"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0qf-1a-N5u"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wGP-Zl-ZOi" secondAttribute="bottom" id="5XQ-2v-xzz"/>
+                            <constraint firstItem="wGP-Zl-ZOi" firstAttribute="top" secondItem="UDQ-wf-tEp" secondAttribute="top" id="akV-qe-QTb"/>
+                            <constraint firstItem="wGP-Zl-ZOi" firstAttribute="leading" secondItem="0qf-1a-N5u" secondAttribute="leading" id="mlY-tc-lnu"/>
+                            <constraint firstItem="wGP-Zl-ZOi" firstAttribute="trailing" secondItem="0qf-1a-N5u" secondAttribute="trailing" id="mxY-mg-mUe"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="All movies" id="Pgy-Pq-04Y"/>
+                    <connections>
+                        <outlet property="allMoviesTableView" destination="wGP-Zl-ZOi" id="tdD-CX-hfX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="87l-45-vVe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="67.938931297709928" y="845.77464788732402"/>
+        </scene>
+        <!--Popular-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hw8_4" customModuleProvider="target" sceneMemberID="viewController">
@@ -87,14 +123,14 @@
                             <constraint firstAttribute="bottom" secondItem="41D-0l-Ur8" secondAttribute="bottom" id="ulk-R1-MXy"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Movies" id="awb-qd-vqA"/>
+                    <tabBarItem key="tabBarItem" title="Popular" id="awb-qd-vqA"/>
                     <connections>
                         <outlet property="tableView" destination="41D-0l-Ur8" id="EyI-Gq-jbL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="-2127" y="847"/>
         </scene>
     </scenes>
     <resources>
